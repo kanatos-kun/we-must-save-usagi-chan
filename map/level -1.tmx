@@ -1,32 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="30" height="18" tilewidth="8" tileheight="8" nextobjectid="1">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="30" height="18" tilewidth="8" tileheight="8" nextobjectid="40">
  <tileset firstgid="1" source="tilesheet.tsx"/>
+ <tileset firstgid="401" name="player" tilewidth="8" tileheight="12" tilecount="1" columns="1">
+  <image source="../image/player.png" trans="e0f8d0" width="8" height="12"/>
+ </tileset>
+ <tileset firstgid="402" name="tonneau" tilewidth="8" tileheight="8" tilecount="1" columns="1">
+  <image source="../image/tonneau.png" trans="e0f8d0" width="8" height="8"/>
+ </tileset>
+ <tileset firstgid="403" name="snake" tilewidth="16" tileheight="8" tilecount="1" columns="1">
+  <image source="../image/snake.png" trans="e0f8d0" width="16" height="8"/>
+ </tileset>
+ <tileset firstgid="404" name="mao_snake" tilewidth="24" tileheight="24" tilecount="1" columns="1">
+  <image source="../image/mao_snake.png" trans="e0f8d0" width="24" height="24"/>
+ </tileset>
+ <tileset firstgid="405" name="princesse" tilewidth="8" tileheight="13" tilecount="1" columns="1">
+  <image source="../image/princesse.png" trans="e0f8d0" width="8" height="13"/>
+ </tileset>
+ <tileset firstgid="406" name="tonneau_02" tilewidth="8" tileheight="16" tilecount="1" columns="1">
+  <image source="../image/tonneau_02.png" trans="e0f8d0" width="8" height="16"/>
+ </tileset>
  <imagelayer name="Calque d'image 1" offsetx="147.545" offsety="-40.1818">
   <image source="../image/background.png" width="400" height="240"/>
  </imagelayer>
- <layer name="Calque de Tile 1" width="30" height="18" offsetx="147.5" offsety="-40">
+ <layer name="Calque de Tile 1" width="30" height="18" offsetx="147.833" offsety="-39.6667">
   <properties>
    <property name="type" value="solid"/>
   </properties>
   <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-6,6,6,6,6,6,6,6,6,6,6,6,6,6,5,5,4,4,0,0,0,0,0,0,0,0,0,0,0,0,
-26,26,26,26,26,26,26,26,26,26,26,26,26,26,25,25,24,24,1,1,10,10,9,9,8,8,7,7,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,30,30,29,29,28,28,27,27,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,2,0,4,4,5,5,6,6,7,7,8,8,9,9,10,10,1,1,
-0,0,6,6,7,7,8,8,9,9,10,10,1,1,24,24,25,25,26,26,27,27,28,28,29,29,30,30,0,0,
-0,0,26,26,27,27,28,28,29,29,30,30,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-4,4,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-24,24,1,1,10,10,9,9,8,8,7,7,6,6,5,5,4,4,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,30,30,29,29,28,28,27,27,26,26,25,25,24,24,1,1,10,10,9,9,8,8,7,7,6,6,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,30,30,29,29,28,28,27,27,26,26,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4,5,5,6,6,7,7,8,8,9,9,10,10,
+0,0,0,0,0,0,0,0,0,0,2,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,2,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,2,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,2,0,2,1,1,21,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,2,0,2,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,17,10,9,9,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,37,30,29,29,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,57,0,0,0,4,4,5,5,6,6,
+0,0,0,0,0,0,0,0,4,4,5,5,6,6,7,7,8,8,9,9,77,10,1,1,24,24,25,25,26,26,
+0,0,9,9,10,17,1,1,24,24,25,25,26,26,27,27,28,28,29,29,30,30,0,0,0,0,0,0,0,0,
+0,0,29,29,30,37,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+4,4,0,0,0,57,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+24,24,1,1,10,77,9,9,8,8,7,7,6,6,5,5,4,4,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,30,30,29,29,28,28,27,27,26,26,25,25,24,24,1,1,10,10,9,9,15,8,7,7,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,30,30,29,29,35,28,27,27,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,55,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4,5,5,6,6,7,7,75,8,9,9,10,10,
 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,24,24,25,25,26,26,27,27,28,28,29,29,30,30
 </data>
  </layer>
+ <objectgroup name="Ennemy" offsetx="147.651" offsety="-40.1364">
+  <object id="1" name="player" type="player" gid="401" x="87.841" y="135.727" width="8" height="12"/>
+  <object id="34" name="tonneau" type="baril" gid="402" x="151.099" y="38.1364" width="8" height="8"/>
+ </objectgroup>
+ <objectgroup name="sensor" offsetx="147.25" offsety="-40.6364">
+  <object id="8" name="LeftSensor" type="leftSensor" x="215.773" y="40.5455" width="24.9091" height="23.0909"/>
+  <object id="11" name="RightSensor" type="rightSensor" x="-0.590909" y="80.9091" width="17.2727" height="16"/>
+  <object id="13" name="LeftSensor" type="leftSensor" x="221.773" y="112" width="18.9091" height="19.2727"/>
+  <object id="33" name="barilSpawner" type="barilSpawner" x="60" y="21.1364" width="8.25" height="8.25"/>
+  <object id="37" name="remove" type="remove" x="0.25" y="127.886" width="6.5" height="8.75"/>
+  <object id="38" name="pass" type="pass" x="111.75" y="6.6364" width="8.25" height="9"/>
+ </objectgroup>
+ <objectgroup name="object" visible="0" offsetx="147.833" offsety="-40.9167">
+  <object id="23" name="tonneau_02" gid="406" x="17.5" y="24.2917" width="8" height="16"/>
+  <object id="24" name="tonneau_02" gid="406" x="13.5" y="11.7917" width="8" height="16"/>
+  <object id="25" name="tonneau_02" gid="406" x="9.75" y="24.5417" width="8" height="16"/>
+  <object id="26" name="tonneau_02" gid="406" x="25.75" y="24.0417" width="8" height="16"/>
+  <object id="27" name="tonneau_02" gid="406" x="22.5" y="12.2917" width="8" height="16"/>
+  <object id="28" name="Mao_snake" type="maoSnake" gid="404" x="38.5833" y="15.9167" width="24" height="24"/>
+  <object id="29" name="Princess" gid="405" x="104.182" y="11.4735" width="8" height="13"/>
+ </objectgroup>
 </map>
